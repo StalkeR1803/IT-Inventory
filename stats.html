@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Inventory Stats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="stats-page">
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">IT Inventory</div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="index.html#categories">Categories</a>
+          <a href="#">Stats</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Dashboard</p>
+            <h1>Operational stats at a glance.</h1>
+            <p>Snapshot of current utilization, lifecycle status, and upcoming renewals.</p>
+          </div>
+          <div class="stats-grid">
+            <article class="stat-card">
+              <p class="label">Overall utilization</p>
+              <h2>82%</h2>
+              <div class="progress" data-value="82"></div>
+              <p class="caption">Healthy</p>
+            </article>
+            <article class="stat-card">
+              <p class="label">Assets nearing refresh</p>
+              <h2>64</h2>
+              <div class="sparkline" data-points="40,48,52,60,64"></div>
+              <p class="caption">+12% vs last quarter</p>
+            </article>
+            <article class="stat-card">
+              <p class="label">Compliance coverage</p>
+              <h2>97%</h2>
+              <div class="progress" data-value="97"></div>
+              <p class="caption">Security controls verified</p>
+            </article>
+            <article class="stat-card">
+              <p class="label">Open tickets</p>
+              <h2>18</h2>
+              <div class="sparkline" data-points="24,23,21,19,18"></div>
+              <p class="caption">Trending down 7%</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Category breakdown</p>
+            <h2>Where your investment lives today.</h2>
+          </div>
+          <div class="breakdown">
+            <div class="breakdown-item">
+              <span>Laptops</span>
+              <div class="bar" data-value="45"></div>
+              <strong>45%</strong>
+            </div>
+            <div class="breakdown-item">
+              <span>Network</span>
+              <div class="bar" data-value="20"></div>
+              <strong>20%</strong>
+            </div>
+            <div class="breakdown-item">
+              <span>Software</span>
+              <div class="bar" data-value="25"></div>
+              <strong>25%</strong>
+            </div>
+            <div class="breakdown-item">
+              <span>Accessories</span>
+              <div class="bar" data-value="10"></div>
+              <strong>10%</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> IT Inventory · Performance Dashboard</p>
+        <div class="footer-links">
+          <a href="index.html">Back to site</a>
+          <a href="#">Export</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
